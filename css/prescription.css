@@ -1,0 +1,45 @@
+body{margin: 0 auto;}
+.main{
+  margin: 5% 0% 0% 15%;
+  width: 70%;
+  background-image: url(../img/dmd.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F5F5;
+  height: 800px;
+  border: 1px solid #424242;
+}
+.dname{
+  width: 40%;
+  float: left;
+  margin-left: 2%;
+  overflow: hidden;
+}
+.header{
+  height: 175px;
+  border-bottom: 2px solid black;
+}
+.hosname{
+  float: right;
+  width: 40%;
+  overflow: hidden;
+}
+.patainet{
+  width: 95%;
+  margin-left: 2%;
+  float: left;
+}
+.pright{
+  height: 625px;
+  float: left;
+  width: 25%;
+  border-right: 1px solid black;
+}
+.rx{
+  margin: 2% 0% 0% 30%;
+}
+.next{
+  bottom: 0;
+  margin-top: 550px;
+  margin-left: 20%;
+}

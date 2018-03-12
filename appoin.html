@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>appt</title>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/clock.js" charset="utf-8"></script>
+ <script src="jquery/jquery-3.1.0.min.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+		<script>
+      function DialogBox(){
+        $( function() {
+        $( "#a2" ).dialog();
+      });
+      }
+    </script>
+    <script>
+      $( function() {
+        $( "#a3" ).datepicker({
+          changeMonth:true,
+          changeYear: true
+        });
+      });
+    </script>
+</head>
+<!--body clock area-->
+
+<body onload="startTime()">
+	<div class ="main">
+
+    	<!--menu area-->
+      <div class="menu">
+            <div class="topnav">
+              <a  href="home.php">Home</a>
+              <a href="doctor.php">doctor</a>
+              <a href="schedule.php">schedule</a>
+              <a href="patient.php">patient</a>
+              <a href="prescriptionlist.php">patient Info</a>
+              <a href="appoin.php">appoinment</a>
+              <a href="health.php">health tips</a>
+              <a href="about.php">About</a>
+              <a href="contact.php">contact</a>
+            </div>
+      </div>
+
+      <!--header area-->
+    <div class="header">
+
+      <div id="a1"></div>
+      <div class="logo"><img src="image/logo.png" alt="pic"/></div>
+      <h2>Hospital management system</h2>
+
+    </div>
+    <div class="banner">
+      <img src="image/b2.jpg" alt="pic"/>
+    </div>
+	<!--header_two area-->
+
+		<div class="header_two">
+		<div class="admin">
+		<h2>Hello Admin !</h2>
+		</div>
+		<div class="button">
+		 <a href="logout.php"><button id="btn2" class="btn" onclick="ButtonPressed1();">LOGOUT</button></a>
+		</div>
+		</div>
+
+	<!--app area-->
+
+	<div class="app">
+		<div class="appt_list">
+		<h2>Appoinments list : </h2>
+		</div>
+		<div id="a2" title="add new record">
+      <form action="#" method="POST">
+				<table id="tbl">
+			<tr>
+			<td>
+			<label for="pn">Patient Name:</label></td>
+			<td>
+			<input type="" name="pan" id="pn" placeholder="Patient Name" required /><br />
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="dn">Doctor Name:</label></td>
+			<td>
+			<input type="" name="docn" id="dn" placeholder="Doctor Name" required /><br />
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="f/m">Gender:</label></td>
+			<td>
+			<input type="" name="gnd" id="f/m" placeholder="female/male" required /><br />
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="tm">Time:</label></td>
+			<td>
+			<input type="" name="time" id="tm" placeholder="10:00AM" required /><br />
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="dt">Date:</label></td>
+			<td>
+			<input type="text" name="tod" id="a3" placeholder="Click for the Calendar"><br />
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="cn">Contact Number:</label></td>
+			<td>
+			<input type="" name="cno" id="cn" placeholder="+8801*********" required /><br />
+			</td>
+			</tr>
+			<tr>
+			<td></td>
+			<td>
+			<input type="submit" name="submit" value="submit" onclick="ShowDate();"/>
+
+
+			</td>
+			</tr>
+			</table>
+    </form>
+		</div>
+			 <div id="add">
+			 <button id="btn1" onclick="DialogBox();">AddNew</button>
+			 </div>
+	</div>
+</div>
+</body>
+
+</html>

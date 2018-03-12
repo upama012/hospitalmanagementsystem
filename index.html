@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hms</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<script src="js/clock.js" charset="utf-8"></script>
+</head>
+<!--body area clock function-->
+<body onload="startTime()">
+
+	<!--main area-->
+	<div class ="main">
+	<!--header area-->
+		<div class="header">
+
+			<div id="a1"></div>
+			<div class="logo"><img src="image/logo.png" alt="pic"/></div>
+			<h2>Hospital management system</h2>
+
+
+		</div>
+		<!--form area-->
+		<div class="form">
+
+		<h3>Admin login</h3>
+		<form action="#" method="post">
+		<table>
+		<tr>
+		<td>
+		<label for="email">email:</label></td>
+		<td>
+		<input type="text" name="username" id="email" placeholder="email" required /><br />
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+		<label for="pass">password:</label></td>
+		<td>
+		<input type="password" name="password" id="pass" placeholder="password" required /><br />
+		</td>
+		</tr>
+		<tr>
+		<td></td>
+		<td>
+<input type="submit" name="submit" value="sign up" onclick="ShowDate();"/>
+			<script>
+			function ShowDate() {
+			alert("welcome");
+			}
+			</script>
+		</td>
+		</tr>
+	</table>
+	<h3>For Login</h3>
+	<P>email:amatunaysha@gmail.com</p>
+	<p>password:1234</p>
+	</form>
+	</div>
+<div class="reg">
+<h1><p>If new admin please <a href="register.php">register</a></p></h1>
+</div>
+<div class="team">
+<p>team member</p>
+<p>Amatun Aysha</p>
+<p>Ayerin Neshat</p>
+<p>Hosne Ara Parvin</p>
+<p>Asha</p>
+</div>
+</div>
+</body>
+</html>
